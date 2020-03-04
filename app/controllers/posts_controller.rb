@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     
     Post.create(title: params[:post][:title], description: params[:post][:description])
     
-    redirect to posts_path
+    redirect_to posts_path
     
   end
   
